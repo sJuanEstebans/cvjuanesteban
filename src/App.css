@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Freeman&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+.App {
+  /* text-align: center; */
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway";
+
+}
+
+.item {
+  align-self: flex-end;
+}
+
+.carousel {
+  height: 90vh;
+
+}
+
+.App-logo {
+  height: 40vmin;
+  /* pointer-events: none;  */
+}
+
+.style-navbar {
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.nav-item {
+  padding: 10px;
+}
+
+.style-navbar button {
+  width: 25vw;
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+  font-size: calc(10px + 0.9vw);
+  text-decoration: none;
+  transition: transform 0.5s ease;
+
+}
+
+.style-navbar button:hover {
+  transform: translateX(20px);
+  color: white;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  color: blue;
+  background-color: red;
+}
+
+.sidepanel {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidepanel a:hover {
+  color: #f1f1f1;
+}
+
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+
+  display: none;
+}
+
+.sidepanel.open {
+  width: 250px;
+}
+
+@media screen and (max-width: 420px) {
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111 !;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 10px;
+    display: inline-block;
+  }
+  .style-navbar {
+    display: flex;
+    justify-content: end;
+  }
+  .style-navbar button {
+    display: none;
+  }
+  .sidepanel button{
+    font-size: calc(10px + 1vh);
+    color: white;
+  }
+}
+
+/* @media screen and (max-width: 12056px) {
+  .nav-item a  {
+      font-size: 28px;
+  }
+} */
